@@ -5,10 +5,17 @@ type: article
 authors:
   - family-names: Sekowski
     given-names: Aleksander
-date-released: "2026-08-26"
+date-released: "2026-08-30"
 version: "1.0"
 url: "https://github.com/aleksUIX/iab-privacy-checkability"
 repository-code: "https://github.com/aleksUIX/iab-privacy-checkability"
+identifiers:
+  - type: url
+    value: "https://www.researchgate.net/publication/413765958_How_Machine-Checkable_Is_IAB_Privacy_Signaling_Syntax_versus_Meaning_on_the_Wire"
+    description: ResearchGate preprint
+  - type: url
+    value: "https://openadtech.org/research/#iab-privacy-signaling"
+    description: OpenAdTech research page
 abstract: >-
   IAB privacy signaling is a transport: the checkable layer is string
   shape, not a person-fact. 221 normative sentences from GPP, TCF,

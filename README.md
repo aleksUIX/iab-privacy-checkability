@@ -5,7 +5,9 @@ Artifacts for the preprint *How Machine-Checkable Is IAB Privacy Signaling? Synt
 Preprint source: `preprint-privacy-signaling.md`  
 PDF: `build/privacy-signaling-preprint.pdf`
 
-Citable copy: https://github.com/aleksUIX/iab-privacy-checkability
+Citable copy: https://github.com/aleksUIX/iab-privacy-checkability  
+ResearchGate: https://www.researchgate.net/publication/413765958_How_Machine-Checkable_Is_IAB_Privacy_Signaling_Syntax_versus_Meaning_on_the_Wire  
+OpenAdTech: https://openadtech.org/research/#iab-privacy-signaling
 
 ## Reproduce the numbers
 
@@ -62,6 +64,7 @@ Code and data: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Cite
 
-See `CITATION.cff`. Cite the ResearchGate item once a DOI exists, then prefer the DOI.
+See `CITATION.cff`. Cite ResearchGate publication 413765958. Prefer the DOI when
+ResearchGate mints one (none on DataCite as of 30 August 2026).
 
 Paper 4 in this series: ResearchGate 413532379.
