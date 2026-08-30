@@ -4,7 +4,7 @@
 
 Independent researcher
 
-Preprint, August 2026, version 1.0. ResearchGate publication 413765958. Paper 5 of the checkability series, after *VAST XML Validation at Bid-Time Scale* (doi:10.13140/RG.2.2.11404.27520), *How Machine-Checkable Is OpenRTB?* (doi:10.13140/RG.2.2.27937.57448), *Measuring OpenRTB Dialects in Client-Side Header Bidding* (doi:10.13140/RG.2.2.26572.78720), and *Why CTV Ad Fraud Keeps Working* (ResearchGate 413532379).
+Preprint, August 2026, version 1.0. doi:10.13140/RG.2.2.24242.16320. Paper 5 of the checkability series, after *VAST XML Validation at Bid-Time Scale* (doi:10.13140/RG.2.2.11404.27520), *How Machine-Checkable Is OpenRTB?* (doi:10.13140/RG.2.2.27937.57448), *Measuring OpenRTB Dialects in Client-Side Header Bidding* (doi:10.13140/RG.2.2.26572.78720), and *Why CTV Ad Fraud Keeps Working* (ResearchGate 413532379).
 
 Keywords: Global Privacy Platform, Transparency and Consent Framework, OpenRTB, connected TV, privacy signaling, protocol verification, server-side ad insertion.
 

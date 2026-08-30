@@ -10,6 +10,8 @@ version: "1.0"
 url: "https://github.com/aleksUIX/iab-privacy-checkability"
 repository-code: "https://github.com/aleksUIX/iab-privacy-checkability"
 identifiers:
+  - type: doi
+    value: "10.13140/RG.2.2.24242.16320"
   - type: url
     value: "https://www.researchgate.net/publication/413765958_How_Machine-Checkable_Is_IAB_Privacy_Signaling_Syntax_versus_Meaning_on_the_Wire"
     description: ResearchGate preprint

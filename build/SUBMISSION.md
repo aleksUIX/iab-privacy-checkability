@@ -38,11 +38,8 @@ Citable archive (this is what the preprint points at):
 
 **DOI**
 
-> Live: ResearchGate publication 413765958
-> (https://www.researchgate.net/publication/413765958_How_Machine-Checkable_Is_IAB_Privacy_Signaling_Syntax_versus_Meaning_on_the_Wire).
-> No 10.13140 DOI on DataCite as of 30 August 2026. Same lag as paper 4.
-> When RG mints one, add it to CITATION.cff, this file, and
-> openadtech/lib/research.ts (`doi` field).
+> 10.13140/RG.2.2.24242.16320
+> ResearchGate publication 413765958.
 
 ## Abstract (paste this)
 
