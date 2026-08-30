@@ -1,0 +1,118 @@
+{
+  "as_of": "2026-08-22",
+  "role": "spec corpus to pin before extraction, plus related measurement papers",
+  "iab_specs": [
+    {
+      "id": "gpp-string",
+      "title": "GPP Consent String Specification",
+      "url": "https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform/blob/main/Core/Consent%20String%20Specification.md",
+      "pin": "03fdf0332d261ee896b77d7f9a10edde1498fc7c (2026-08-06)",
+      "surface": 1
+    },
+    {
+      "id": "gpp-guidelines",
+      "title": "GPP Implementation Guidelines (final Feb 2025)",
+      "url": "https://iabtechlab.com/gpp/",
+      "pin": "implementation.md at GPP commit 03fdf03. Aug 2026 MSPA public comment (PR 160) closes 2026-09-11; not treated as final.",
+      "surface": 1
+    },
+    {
+      "id": "tcf-v2-string",
+      "title": "IAB Europe TCF v2 consent string and vendor list formats",
+      "url": "https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20Consent%20string%20and%20vendor%20list%20formats%20v2.md",
+      "surface": 1
+    },
+    {
+      "id": "us-privacy",
+      "title": "US Privacy String (CCPA)",
+      "url": "https://github.com/InteractiveAdvertisingBureau/USPrivacy/blob/master/CCPA/US%20Privacy%20String.md",
+      "notes": "Deprecated 31 Jan 2024 in favor of GPP. Keep as S1 + deprecation finding.",
+      "surface": 1
+    },
+    {
+      "id": "openrtb-2.6-privacy-fields",
+      "title": "OpenRTB 2.6-202606 regs, user.consent, user.eids, device.ifa, coppa",
+      "url": "https://github.com/InteractiveAdvertisingBureau/openrtb2.x",
+      "pin": "2.6-202606, same as paper 2",
+      "surface": 1
+    },
+    {
+      "id": "vast-macros",
+      "title": "VAST 4.x macros including GDPRCONSENT and related",
+      "url": "https://interactiveadvertisingbureau.github.io/vast/vast4macros/vast4-macros-latest.html",
+      "surface": 1
+    },
+    {
+      "id": "ssai-macros",
+      "title": "IAB Tech Lab SSAI VAST Macro Guidance 1.0",
+      "url": "https://iabtechlab.com/wp-content/uploads/2020/11/IABTechLab_SSAI_VAST_Macros_v1.0-Nov-2020.pdf",
+      "surface": 1
+    },
+    {
+      "id": "ifa-ott-guidelines",
+      "title": "Guidelines for Identifier for Advertising on OTT Platforms (deprecated 2023)",
+      "notes": "Already treated in paper 4. Privacy reading only: IFA is in the default CTV bid; GPP does not hash it.",
+      "surface": 1
+    }
+  ],
+  "series": [
+    {
+      "id": "paper-2",
+      "title": "How Machine-Checkable Is OpenRTB?",
+      "doi": "10.13140/RG.2.2.27937.57448"
+    },
+    {
+      "id": "paper-3",
+      "title": "Measuring OpenRTB Dialects in Client-Side Header Bidding",
+      "doi": "10.13140/RG.2.2.26572.78720",
+      "reuse": "Privacy field presence and ext.gdpr leftover; US vantage"
+    },
+    {
+      "id": "paper-4",
+      "title": "Why CTV Ad Fraud Keeps Working",
+      "rg": "https://www.researchgate.net/publication/413532379_Why_CTV_Ad_Fraud_Keeps_Working_A_Verifiability_Analysis_of_the_Connected_TV_Supply_Chain",
+      "reuse": "SSAI declarer of record; ifa; ACR named as second pipe. Do not reuse the 17 schemes."
+    }
+  ],
+  "related_measurement": [
+    {
+      "id": "anselmi-2024",
+      "title": "Watching TV with the Second-Party (ACR)",
+      "venue": "IMC 2024",
+      "doi": "10.1145/3646547.3689013",
+      "surface": 2
+    },
+    {
+      "id": "moghaddam-2019",
+      "title": "Watching You Watch",
+      "venue": "CCS 2019",
+      "doi": "10.1145/3319535.3354198",
+      "surface": 2
+    },
+    {
+      "id": "varmarken-2020",
+      "title": "The TV is Smart and Full of Trackers",
+      "venue": "PoPETs 2020",
+      "surface": 2
+    },
+    {
+      "id": "tagliaro-2023",
+      "title": "I Still Know What You Watched Last Sunday",
+      "venue": "NDSS 2023",
+      "surface": 2
+    },
+    {
+      "id": "opted-out-2024",
+      "title": "Opted Out, Yet Tracked",
+      "venue": "PETS 2024",
+      "arxiv": "2202.00885",
+      "surface": 1
+    },
+    {
+      "id": "revoke-2025",
+      "title": "Johnny Can't Revoke Consent Either",
+      "arxiv": "2411.15414",
+      "surface": 1
+    }
+  ]
+}

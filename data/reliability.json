@@ -1,0 +1,900 @@
+{
+  "seed": 20260822,
+  "n": 40,
+  "ids": [
+    0,
+    4,
+    5,
+    7,
+    11,
+    18,
+    26,
+    27,
+    32,
+    36,
+    43,
+    58,
+    64,
+    68,
+    83,
+    87,
+    91,
+    96,
+    98,
+    126,
+    129,
+    130,
+    135,
+    146,
+    155,
+    159,
+    161,
+    162,
+    164,
+    165,
+    173,
+    178,
+    196,
+    202,
+    208,
+    210,
+    214,
+    216,
+    217,
+    218
+  ],
+  "rows": [
+    {
+      "id": 0,
+      "text": "This document specifies how that string must be formatted and how it must be used.",
+      "gold": [
+        "S1",
+        "M0",
+        "B"
+      ],
+      "recode": [
+        "S1",
+        "M0",
+        "B"
+      ],
+      "match": true
+    },
+    {
+      "id": 4,
+      "text": "The string must contain a header and applicable discrete section(s): [Header]~[Discrete Section]",
+      "gold": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "recode": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "match": true
+    },
+    {
+      "id": 5,
+      "text": "The header is always required and comes first.",
+      "gold": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "recode": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "match": true
+    },
+    {
+      "id": 7,
+      "text": "The Header is always required and always comes first.",
+      "gold": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "recode": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "match": true
+    },
+    {
+      "id": 11,
+      "text": "New sections should follow the guidelines below.",
+      "gold": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 18,
+      "text": "> Note: It is recommended to use Field names in CamelCase and without any special characters or space.",
+      "gold": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 26,
+      "text": "Since the pixel is in an ` ` tag without the ability to execute Javascript, the CMP API cannot be used to obtain the GPP String.",
+      "gold": [
+        "S3",
+        "M1",
+        "C"
+      ],
+      "recode": [
+        "S3",
+        "M1",
+        "C"
+      ],
+      "match": true
+    },
+    {
+      "id": 27,
+      "text": "All parties in the ad supply chain who transact using URLs must add a pair of macros in their URLs where the GPP String, and applicable GPP Section IDs (SID), are inserted.",
+      "gold": [
+        "S3",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S3",
+        "M0",
+        "C"
+      ],
+      "match": true
+    },
+    {
+      "id": 32,
+      "text": "MSPA, TCF CA, TCF EU), vendors should reference each framework's policy.",
+      "gold": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "recode": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "match": true
+    },
+    {
+      "id": 36,
+      "text": "Vendor A with ID 123 to receive a GPP String which includes the EU TCF v2 as applicable section, an image URL must include two key-value pairs with the URL parameters and macros `g",
+      "gold": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 43,
+      "text": "As the GPP String may encode user preferences for multiple jurisdictions, this field indicates to the callee which section of the string is considered \u201cin force\u201d by the caller.",
+      "gold": [
+        "S1",
+        "M2",
+        "D"
+      ],
+      "recode": [
+        "S1",
+        "M1",
+        "D"
+      ],
+      "match": false
+    },
+    {
+      "id": 58,
+      "text": "This section details the overall guidelines that digital property owners should typically follow when implementing the GPP.",
+      "gold": [
+        "S0",
+        "M1",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M1",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 64,
+      "text": "They should also consult their CMPs (if using a commercial CMP) to determine which sections the CMP is ready to support.",
+      "gold": [
+        "S0",
+        "M1",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M1",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 68,
+      "text": "If you do not have an assigned CMP ID due to not supporting sections that require one, you should set the field to 1.",
+      "gold": [
+        "S1",
+        "M1",
+        "B"
+      ],
+      "recode": [
+        "S1",
+        "M1",
+        "B"
+      ],
+      "match": true
+    },
+    {
+      "id": 83,
+      "text": "Vendors that are not included in the GPP string are required to respect the lack of consent and avoid processing personal data.",
+      "gold": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "recode": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "match": true
+    },
+    {
+      "id": 87,
+      "text": "For any server-side call, if using openRTB, the consent payload should be sent according to the openRTB specs.",
+      "gold": [
+        "S3",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S3",
+        "M0",
+        "C"
+      ],
+      "match": true
+    },
+    {
+      "id": 91,
+      "text": "Prescribed use of the TCF may support compliance with the GDPR, but the real benefit to the digital advertising ecosystem is a safer Internet for consumers, and more reliable data ",
+      "gold": [
+        "S0",
+        "M1",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M1",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 96,
+      "text": "This document specifies how that string must be formatted, who should use it, and how it must be used.",
+      "gold": [
+        "S1",
+        "M0",
+        "B"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": false
+    },
+    {
+      "id": 98,
+      "text": "A Transparency & Consent String may only be created by an IAB Europe TCF registered CMP using its assigned CMP ID number in accordance with the Policies.",
+      "gold": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "recode": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "match": true
+    },
+    {
+      "id": 126,
+      "text": "If a CMP encounters a situation where both a v1.x string and a v2.0 string are erroneously present simultaneously, the CMP should remove the v1.x string to ensure that there is onl",
+      "gold": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "recode": [
+        "S2",
+        "M0",
+        "B"
+      ],
+      "match": false
+    },
+    {
+      "id": 129,
+      "text": "A TC String must contain a Core TC String and the _Disclosed Vendors_ segment.",
+      "gold": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "recode": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "match": true
+    },
+    {
+      "id": 130,
+      "text": "It may optionally contain a _Publisher TC_ segment:",
+      "gold": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "recode": [
+        "S1",
+        "M0",
+        "A"
+      ],
+      "match": true
+    },
+    {
+      "id": 135,
+      "text": "Also, the timestamp must be based in UTC time in order to get a consistent decisecond value across the time zones.",
+      "gold": [
+        "S1",
+        "M0",
+        "B"
+      ],
+      "recode": [
+        "S1",
+        "M0",
+        "B"
+      ],
+      "match": true
+    },
+    {
+      "id": 146,
+      "text": "2 bits Enum 0 Purpose Flatly Not Allowed by Publisher (regardless of Vendor declarations) 1 Require Consent (if Vendor has declared the Purpose IDs legal basis as Legitimate Intere",
+      "gold": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "recode": [
+        "S1",
+        "M2",
+        "B"
+      ],
+      "match": false
+    },
+    {
+      "id": 155,
+      "text": "The information stored in the GVL is used for determining what legal disclosures must be made to the user.",
+      "gold": [
+        "S0",
+        "M1",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M1",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 159,
+      "text": "For a delay caused by caching requirements, the penultimate version of the GVL may be considered the latest available version.",
+      "gold": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "match": true
+    },
+    {
+      "id": 161,
+      "text": "To determine whether the interface should be resurfaced to a user, the CMP must compare the latest version of the GVL with the archived version of the GVL identified in the TC Stri",
+      "gold": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": false
+    },
+    {
+      "id": 162,
+      "text": "The CMP is not required to resurface the interface to the user if the versions are different.",
+      "gold": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": false
+    },
+    {
+      "id": 164,
+      "text": "All requests for the GVL must now be server-side.",
+      "gold": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "match": true
+    },
+    {
+      "id": 165,
+      "text": "Server-side applications must cache these resources in the same way that a browser would - the file must be requested and cached using the specified ```max-age``` value in the head",
+      "gold": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "match": true
+    },
+    {
+      "id": 173,
+      "text": "As stated above, vendor server-side applications must cache these resources in the same way that a browser would.",
+      "gold": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "match": true
+    },
+    {
+      "id": 178,
+      "text": "To determine if TCF Policies have changed, CMPs shall compare the _TcfPolicyVersion_ encoded in a TC String with the _TcfPolicyVersion_ property in the latest Global Vendor List pu",
+      "gold": [
+        "S0",
+        "M1",
+        "C"
+      ],
+      "recode": [
+        "S3",
+        "M0",
+        "C"
+      ],
+      "match": false
+    },
+    {
+      "id": 196,
+      "text": "As the concern for consumer privacy grows, regional governance in the US may increase.",
+      "gold": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 202,
+      "text": "The hyphen character may also be used to signal an unknown state in the second (Notice) and fourth (LSPA Covered Transaction) character positions.",
+      "gold": [
+        "S1",
+        "M2",
+        "B"
+      ],
+      "recode": [
+        "S1",
+        "M2",
+        "B"
+      ],
+      "match": true
+    },
+    {
+      "id": 208,
+      "text": "integer; recommended Standard \u201cDo Not Track\u201d flag as set in the header by the browser, where 0 = tracking is unrestricted, 1 = do not track.",
+      "gold": [
+        "S1",
+        "M1",
+        "A"
+      ],
+      "recode": [
+        "S1",
+        "M1",
+        "A"
+      ],
+      "match": true
+    },
+    {
+      "id": 210,
+      "text": "string ID sanctioned for advertiser use in the clear (i.e., not hashed) Unless prior arrangements have been made between the buyer and the seller directly, the value in this field ",
+      "gold": [
+        "S1",
+        "M1",
+        "D"
+      ],
+      "recode": [
+        "S1",
+        "M1",
+        "D"
+      ],
+      "match": true
+    },
+    {
+      "id": 214,
+      "text": "string Optional feature to pass bidder data that was set in the exchange\u2019s cookie.",
+      "gold": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": true
+    },
+    {
+      "id": 216,
+      "text": "This may be the operational domain of the system, if that is different from the parent corporate domain, to facilitate WHOIS and reverse IP lookups to establish clear ownership of ",
+      "gold": [
+        "S0",
+        "M0",
+        "D"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": false
+    },
+    {
+      "id": 217,
+      "text": "This should be the same value as used to identify sellers in an ads.txt file if one exists.",
+      "gold": [
+        "S3",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S3",
+        "M0",
+        "C"
+      ],
+      "match": true
+    },
+    {
+      "id": 218,
+      "text": "In some cases, this may be the same value as inserter.",
+      "gold": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": true
+    }
+  ],
+  "syntax": {
+    "agree": 36,
+    "agree_pct": 90.0,
+    "kappa": 0.828
+  },
+  "meaning": {
+    "agree": 36,
+    "agree_pct": 90.0,
+    "kappa": 0.801
+  },
+  "paper2": {
+    "agree": 34,
+    "agree_pct": 85.0,
+    "kappa": 0.809
+  },
+  "n_full_match": 32,
+  "disagreements": [
+    {
+      "id": 43,
+      "text": "As the GPP String may encode user preferences for multiple jurisdictions, this field indicates to the callee which section of the string is considered \u201cin force\u201d by the caller.",
+      "gold": [
+        "S1",
+        "M2",
+        "D"
+      ],
+      "recode": [
+        "S1",
+        "M1",
+        "D"
+      ],
+      "match": false
+    },
+    {
+      "id": 96,
+      "text": "This document specifies how that string must be formatted, who should use it, and how it must be used.",
+      "gold": [
+        "S1",
+        "M0",
+        "B"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": false
+    },
+    {
+      "id": 126,
+      "text": "If a CMP encounters a situation where both a v1.x string and a v2.0 string are erroneously present simultaneously, the CMP should remove the v1.x string to ensure that there is onl",
+      "gold": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "recode": [
+        "S2",
+        "M0",
+        "B"
+      ],
+      "match": false
+    },
+    {
+      "id": 146,
+      "text": "2 bits Enum 0 Purpose Flatly Not Allowed by Publisher (regardless of Vendor declarations) 1 Require Consent (if Vendor has declared the Purpose IDs legal basis as Legitimate Intere",
+      "gold": [
+        "S0",
+        "M1",
+        "D"
+      ],
+      "recode": [
+        "S1",
+        "M2",
+        "B"
+      ],
+      "match": false
+    },
+    {
+      "id": 161,
+      "text": "To determine whether the interface should be resurfaced to a user, the CMP must compare the latest version of the GVL with the archived version of the GVL identified in the TC Stri",
+      "gold": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": false
+    },
+    {
+      "id": 162,
+      "text": "The CMP is not required to resurface the interface to the user if the versions are different.",
+      "gold": [
+        "S0",
+        "M0",
+        "C"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": false
+    },
+    {
+      "id": 178,
+      "text": "To determine if TCF Policies have changed, CMPs shall compare the _TcfPolicyVersion_ encoded in a TC String with the _TcfPolicyVersion_ property in the latest Global Vendor List pu",
+      "gold": [
+        "S0",
+        "M1",
+        "C"
+      ],
+      "recode": [
+        "S3",
+        "M0",
+        "C"
+      ],
+      "match": false
+    },
+    {
+      "id": 216,
+      "text": "This may be the operational domain of the system, if that is different from the parent corporate domain, to facilitate WHOIS and reverse IP lookups to establish clear ownership of ",
+      "gold": [
+        "S0",
+        "M0",
+        "D"
+      ],
+      "recode": [
+        "S0",
+        "M0",
+        "X"
+      ],
+      "match": false
+    }
+  ],
+  "unique_texts": 217,
+  "dup_clusters": [
+    {
+      "ids": [
+        5,
+        7
+      ],
+      "specs": [
+        "gpp-string",
+        "gpp-string"
+      ],
+      "n": 2
+    },
+    {
+      "ids": [
+        25,
+        111
+      ],
+      "specs": [
+        "gpp-string",
+        "tcf-v2-string"
+      ],
+      "n": 2
+    },
+    {
+      "ids": [
+        38,
+        117
+      ],
+      "specs": [
+        "gpp-string",
+        "tcf-v2-string"
+      ],
+      "n": 2
+    },
+    {
+      "ids": [
+        40,
+        119
+      ],
+      "specs": [
+        "gpp-string",
+        "tcf-v2-string"
+      ],
+      "n": 2
+    }
+  ],
+  "wire_specs": {
+    "n": 19,
+    "syntax": {
+      "agree": 19,
+      "agree_pct": 100.0,
+      "kappa": 1.0
+    },
+    "meaning": {
+      "agree": 18,
+      "agree_pct": 94.7,
+      "kappa": 0.888
+    },
+    "paper2": {
+      "agree": 18,
+      "agree_pct": 94.7,
+      "kappa": 0.932
+    },
+    "n_full_match": 17,
+    "specs": [
+      "gpp-string",
+      "us-privacy",
+      "openrtb-privacy"
+    ]
+  },
+  "tcf_subsample": {
+    "n": 16,
+    "syntax": {
+      "agree": 12,
+      "agree_pct": 75.0,
+      "kappa": 0.467
+    },
+    "meaning": {
+      "agree": 13,
+      "agree_pct": 81.2,
+      "kappa": 0.593
+    },
+    "paper2": {
+      "agree": 11,
+      "agree_pct": 68.8,
+      "kappa": 0.596
+    },
+    "n_full_match": 10
+  },
+  "drop_header_twin": {
+    "n": 39,
+    "syntax": {
+      "agree": 35,
+      "agree_pct": 89.7,
+      "kappa": 0.822
+    },
+    "meaning": {
+      "agree": 35,
+      "agree_pct": 89.7,
+      "kappa": 0.798
+    },
+    "paper2": {
+      "agree": 33,
+      "agree_pct": 84.6,
+      "kappa": 0.803
+    },
+    "n_full_match": 31
+  },
+  "disagreements_by_spec": {
+    "gpp-string": 1,
+    "openrtb-privacy": 1,
+    "tcf-v2-string": 6
+  }
+}

@@ -1,0 +1,9 @@
+IAB Tech Lab's privacy stack (GPP, TCF, US Privacy, OpenRTB regs / user / device, and VAST privacy macros) is built to carry consumer choice across the bid. This paper asks how much of that stack a receiver can check, and what a check decides. IAB privacy signaling is a transport: the checkable layer is string shape, not a person-fact.
+
+We extract 221 normative-keyword sentences from pinned GPP, TCF, US Privacy, and OpenRTB 2.6-202606 privacy texts. After screening out 59 non-conformance sentences, 162 statements remain. Each is coded for syntax, meaning, and the enforceability classes of How Machine-Checkable Is OpenRTB?. Reliability is a delayed same-author recode, not independent double-coding. On the GPP string spec, US Privacy, and OpenRTB privacy fields the recode matches syntax on 19 of 19 sampled rows. Six of eight disagreements are TCF process sentences.
+
+Of 26 GPP-string conformance statements, 16 (61.5%) are S1 or S2 and 20 (76.9%) are M0. The TCF document is the opposite mix: 60 of 89 conformance statements (67.4%) are S0.
+
+Web header-bidding traffic from the companion measurement paper is the control, not an EEA consent study: 20,226 requests, 165 sites, one US vantage. GPP is the MSPA US National section, never TCF Europe. On Sample A, 40 of 79 sites carry GPP, 29 of 79 still send deprecated US Privacy under regs.ext, and 38 of 79 still send leftover regs.ext.gdpr. Media.net is 26 sites and zero of these fields. Connected TV is the stress test for meaning: the CMP GPP assumes is often missing, server-side ad insertion makes the stitcher the declarer of record, and ACR never reads those fields.
+
+A receiver can reject a malformed GPP header or a missing gpp_sid, and can warn on leftover regs.ext.gdpr. That is not consent, not COPPA, and not a bound on ACR.

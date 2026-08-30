@@ -1,0 +1,99 @@
+{
+  "note": "OpenRTB 2.6-202606 privacy fields. Syntax/meaning from CODEBOOK.md. paper4_vi is the Verifiability Index class on CTV SSAI deployed from paper 4 field-codings.json (C = self-declared). VAST macros are not OpenRTB fields; they are S3 relative to the bid.",
+  "openrtb_2_6": [
+    {
+      "field": "regs.gpp",
+      "syntax": "S1/S2",
+      "meaning": "M1",
+      "paper2": "B",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "Header type/version and '~' shape are S1; header section-count vs payloads and gpp_sid pairing are S2. Author of the string is a CMP the message does not identify."
+    },
+    {
+      "field": "regs.gpp_sid",
+      "syntax": "S1",
+      "meaning": "M2",
+      "paper2": "B",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "Integer array, known section-id registry, must not contain 3. 'In force' is the sender's word."
+    },
+    {
+      "field": "regs.gdpr",
+      "syntax": "S1",
+      "meaning": "M2",
+      "paper2": "A",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "0/1/omitted. Omission is specified as unknown. Applicability is declared."
+    },
+    {
+      "field": "user.consent",
+      "syntax": "S1",
+      "meaning": "M1",
+      "paper2": "B",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "TCF core-string shape. Creation is reserved to a registered CMP."
+    },
+    {
+      "field": "regs.us_privacy",
+      "syntax": "S1",
+      "meaning": "M2",
+      "paper2": "A",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "Four-character USP. Deprecated 31 January 2024. Still on the wire."
+    },
+    {
+      "field": "regs.coppa",
+      "syntax": "S1",
+      "meaning": "M2",
+      "paper2": "A",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "Boolean. No children's-inventory registry in the spec."
+    },
+    {
+      "field": "device.ifa",
+      "syntax": "S1",
+      "meaning": "M1",
+      "paper2": "D",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "Presence and UUID shape are S1. OS origin is expected unless bilateral exception; SSAI can originate the value (paper 4)."
+    },
+    {
+      "field": "device.lmt",
+      "syntax": "S1",
+      "meaning": "M1",
+      "paper2": "A",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "0/1. OS Limit Ad Tracking is not in the message."
+    },
+    {
+      "field": "device.dnt",
+      "syntax": "S1",
+      "meaning": "M1",
+      "paper2": "A",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "0/1. Browser DNT header is not in the message."
+    },
+    {
+      "field": "user.eids",
+      "syntax": "S1",
+      "meaning": "M1",
+      "paper2": "B",
+      "paper4_vi_ctv_ssai": "C",
+      "note": "Structure and ads.txt cross-check on inserter are S1/S3. Match quality is delegated."
+    }
+  ],
+  "vast_macros": [
+    {"macro": "GDPRCONSENT", "syntax": "S3", "meaning": "M1", "note": "Same bytes as user.consent if both hops are observed."},
+    {"macro": "GPPSTRING", "syntax": "S3", "meaning": "M1", "note": "Official VAST 4.x macros page. Optional; not a VAST version bump."},
+    {"macro": "GPPSECTIONID", "syntax": "S3", "meaning": "M2", "note": "Paired with GPPSTRING."},
+    {"macro": "IFA", "syntax": "S3", "meaning": "M1", "note": "Same identity as device.ifa."},
+    {"macro": "LIMITADTRACKING", "syntax": "S3", "meaning": "M1", "note": "Same flag as device.lmt."},
+    {"macro": "REGULATIONS", "syntax": "S3", "meaning": "M2", "note": "List of applicable regimes; sender-declared."}
+  ],
+  "vendor_hash_contrast": [
+    {"contract": "Meta CAPI user_data.em", "syntax": "S1", "meaning": "M0", "predicate": "SHA-256 hex digest"},
+    {"contract": "Meta CAPI client_ip_address", "syntax": "S1", "meaning": "M0", "predicate": "must not be a digest"},
+    {"contract": "TikTok Events API context.user.email", "syntax": "S1", "meaning": "M0", "predicate": "SHA-256 hex digest"},
+    {"contract": "Google Ads click conversion hashedEmail", "syntax": "S1", "meaning": "M0", "predicate": "SHA-256"}
+  ]
+}

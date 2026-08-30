@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-08-26",
+  "note": "Full clones live under specs/{gpp,tcf,usprivacy} for extraction convenience and are gitignored. Pinned copies of the files actually counted are in specs/pinned/.",
+  "pins": [
+    {
+      "id": "gpp",
+      "repo": "https://github.com/InteractiveAdvertisingBureau/Global-Privacy-Platform",
+      "commit": "03fdf0332d261ee896b77d7f9a10edde1498fc7c",
+      "date": "2026-08-06",
+      "files": [
+        "Core/Consent String Specification.md",
+        "implementation.md"
+      ],
+      "public_comment": {
+        "pr": 160,
+        "opened": "2026-08-11",
+        "closes": "2026-09-11",
+        "subject": "Fifth Amended and Restated MSPA; US National and state GPP sections. Not treated as final."
+      }
+    },
+    {
+      "id": "usprivacy",
+      "repo": "https://github.com/InteractiveAdvertisingBureau/USPrivacy",
+      "commit": "7a281d542347246a168291a3af2979551ee340db",
+      "date": "2025-07-08",
+      "files": ["CCPA/US Privacy String.md"],
+      "deprecated": "2024-01-31"
+    },
+    {
+      "id": "tcf",
+      "repo": "https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework",
+      "commit": "703fc2964ba8fe1086b18a3c509c46a48c1aee1c",
+      "date": "2026-07-28",
+      "files": ["TCFv2/IAB Tech Lab - Consent string and vendor list formats v2.md"]
+    },
+    {
+      "id": "openrtb-2.6-202606",
+      "file": "rtblint/.openrtb-specs/2.x/openrtb-2.6-202606.md",
+      "sha256": "1b730796e2776d576cb5749706f6638fd4aa35594c1182e7d0e6aedbce605728",
+      "excerpt": "specs/pinned/openrtb-privacy-excerpt.md"
+    },
+    {
+      "id": "vast-macros",
+      "url": "https://interactiveadvertisingbureau.github.io/vast/vast4macros/vast4-macros-latest.html",
+      "local": "vast/vast4macros/data/macros-data.json",
+      "privacy_macros": [
+        "IFA",
+        "IFATYPE",
+        "LIMITADTRACKING",
+        "REGULATIONS",
+        "GDPRCONSENT",
+        "GPPSTRING",
+        "GPPSECTIONID"
+      ],
+      "note": "Official macros page lists GPPSTRING and GPPSECTIONID. vastlint  known-macro table at extraction time did not include those two tokens; they are optional 4.x macros, not a VAST version bump."
+    }
+  ]
+}

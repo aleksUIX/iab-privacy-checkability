@@ -1,0 +1,173 @@
+{
+  "n_keyword": 221,
+  "n_excluded_x": 59,
+  "n_conformance": 162,
+  "heuristic_full_agree": 122,
+  "by_spec": {
+    "gpp-guidelines": {
+      "keyword": 45,
+      "conformance": 26,
+      "x": 19,
+      "syntax": {
+        "S0": 10,
+        "S1": 9,
+        "S2": 1,
+        "S3": 6
+      },
+      "meaning": {
+        "M0": 12,
+        "M1": 10,
+        "M2": 4,
+        "M3": 0
+      },
+      "paper2": {
+        "A": 3,
+        "B": 7,
+        "C": 6,
+        "D": 10
+      }
+    },
+    "gpp-string": {
+      "keyword": 45,
+      "conformance": 26,
+      "x": 19,
+      "syntax": {
+        "S0": 2,
+        "S1": 15,
+        "S2": 1,
+        "S3": 8
+      },
+      "meaning": {
+        "M0": 20,
+        "M1": 5,
+        "M2": 1,
+        "M3": 0
+      },
+      "paper2": {
+        "A": 3,
+        "B": 11,
+        "C": 9,
+        "D": 3
+      }
+    },
+    "openrtb-privacy": {
+      "keyword": 15,
+      "conformance": 12,
+      "x": 3,
+      "syntax": {
+        "S0": 3,
+        "S1": 8,
+        "S2": 0,
+        "S3": 1
+      },
+      "meaning": {
+        "M0": 5,
+        "M1": 5,
+        "M2": 2,
+        "M3": 0
+      },
+      "paper2": {
+        "A": 3,
+        "B": 4,
+        "C": 1,
+        "D": 4
+      }
+    },
+    "tcf-v2-string": {
+      "keyword": 106,
+      "conformance": 89,
+      "x": 17,
+      "syntax": {
+        "S0": 60,
+        "S1": 21,
+        "S2": 0,
+        "S3": 8
+      },
+      "meaning": {
+        "M0": 49,
+        "M1": 40,
+        "M2": 0,
+        "M3": 0
+      },
+      "paper2": {
+        "A": 9,
+        "B": 9,
+        "C": 39,
+        "D": 32
+      }
+    },
+    "us-privacy": {
+      "keyword": 10,
+      "conformance": 9,
+      "x": 1,
+      "syntax": {
+        "S0": 4,
+        "S1": 3,
+        "S2": 0,
+        "S3": 2
+      },
+      "meaning": {
+        "M0": 2,
+        "M1": 1,
+        "M2": 6,
+        "M3": 0
+      },
+      "paper2": {
+        "A": 0,
+        "B": 3,
+        "C": 2,
+        "D": 4
+      }
+    }
+  },
+  "syntax": {
+    "S0": 79,
+    "S1": 56,
+    "S2": 2,
+    "S3": 25
+  },
+  "meaning": {
+    "M0": 88,
+    "M1": 61,
+    "M2": 13,
+    "M3": 0
+  },
+  "paper2": {
+    "A": 18,
+    "B": 34,
+    "C": 57,
+    "D": 53
+  },
+  "syntax_x_meaning": {
+    "S1+M0": 38,
+    "S0+M1": 46,
+    "S2+M0": 2,
+    "S3+M1": 4,
+    "S3+M0": 21,
+    "S1+M1": 11,
+    "S1+M2": 7,
+    "S0+M2": 6,
+    "S0+M0": 27
+  },
+  "syntax_pct": {
+    "S0": 48.8,
+    "S1": 34.6,
+    "S2": 1.2,
+    "S3": 15.4
+  },
+  "meaning_pct": {
+    "M0": 54.3,
+    "M1": 37.7,
+    "M2": 8.0,
+    "M3": 0.0
+  },
+  "paper2_pct": {
+    "A": 11.1,
+    "B": 21.0,
+    "C": 35.2,
+    "D": 32.7
+  },
+  "syntax_shape_or_internal_pct": 35.8,
+  "meaning_person_fact_in_message_pct": 54.3,
+  "static_checkable_pct": 32.1
+}

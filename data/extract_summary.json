@@ -1,0 +1,15 @@
+{
+  "n": 221,
+  "by_spec": {
+    "gpp-guidelines": 45,
+    "gpp-string": 45,
+    "openrtb-privacy": 15,
+    "tcf-v2-string": 106,
+    "us-privacy": 10
+  },
+  "by_obligation": {
+    "obligation": 108,
+    "recommendation": 55,
+    "permission": 58
+  }
+}

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "How Machine-Checkable Is IAB Privacy Signaling? Syntax versus Meaning on the Wire"
+message: If you use this codebook, statement dataset, or wild aggregates, please cite the preprint.
+type: article
+authors:
+  - family-names: Sekowski
+    given-names: Aleksander
+date-released: "2026-08-26"
+version: "1.0"
+url: "https://github.com/aleksUIX/iab-privacy-checkability"
+repository-code: "https://github.com/aleksUIX/iab-privacy-checkability"
+abstract: >-
+  IAB privacy signaling is a transport: the checkable layer is string
+  shape, not a person-fact. 221 normative sentences from GPP, TCF,
+  US Privacy, and OpenRTB privacy fields; 162 conformance statements;
+  syntax versus meaning coding; a US web baseline from paper 3; CTV
+  as the stress test for meaning.
+keywords:
+  - Global Privacy Platform
+  - Transparency and Consent Framework
+  - OpenRTB
+  - connected TV
+  - privacy signaling
+  - protocol verification
+license: Apache-2.0
+license-url: "https://creativecommons.org/licenses/by/4.0/"

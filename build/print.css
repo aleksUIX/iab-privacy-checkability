@@ -1,0 +1,181 @@
+/* Print stylesheet for the preprint PDF build (pandoc -> weasyprint).
+   Deliberately conservative: this is a preprint, not a designed artifact. */
+
+@page {
+  size: A4;
+  margin: 22mm 20mm 20mm 20mm;
+  @bottom-center {
+    content: counter(page);
+    font-family: Charter, Georgia, serif;
+    font-size: 8.5pt;
+    color: #555;
+  }
+  @top-center {
+    content: "How Machine-Checkable Is IAB Privacy Signaling \00b7 Sekowski \00b7 preprint, August 2026";
+    font-family: Charter, Georgia, serif;
+    font-size: 7.5pt;
+    color: #888;
+    padding-bottom: 3mm;
+  }
+}
+@page :first {
+  @top-center { content: none; }
+}
+
+html {
+  font-family: Charter, "Bitstream Charter", Palatino, Georgia, serif;
+  font-size: 10.2pt;
+  line-height: 1.44;
+  color: #111;
+  hyphens: auto;
+}
+body { margin: 0; text-align: justify; }
+
+/* ---- headings ---------------------------------------------------------- */
+h1, h2, h3, h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-align: left;
+  hyphens: none;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+h1 {
+  font-size: 19pt;
+  line-height: 1.2;
+  margin: 0 0 14pt 0;
+  letter-spacing: -0.2pt;
+}
+h2 {
+  font-size: 12.5pt;
+  margin: 20pt 0 7pt 0;
+  padding-bottom: 3pt;
+  border-bottom: 0.5pt solid #ccc;
+  break-before: auto;
+}
+h3 { font-size: 10.8pt; margin: 14pt 0 5pt 0; }
+h4 { font-size: 10.2pt; margin: 11pt 0 4pt 0; font-style: italic; font-weight: 500; }
+
+p { margin: 0 0 7pt 0; orphans: 2; widows: 2; }
+
+/* Title block: the author and provenance lines under the H1 */
+h1 + p { font-size: 11pt; font-weight: 600; margin-bottom: 2pt; }
+h1 + p + p { margin-bottom: 2pt; color: #333; }
+
+/* ---- lists ------------------------------------------------------------- */
+ul, ol { margin: 0 0 8pt 0; padding-left: 16pt; }
+li { margin-bottom: 3pt; }
+
+/* ---- inline ------------------------------------------------------------ */
+code {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.86em;
+  background: #f4f4f4;
+  padding: 0.5pt 2pt;
+  border-radius: 2pt;
+  hyphens: none;
+  overflow-wrap: break-word;
+}
+strong { font-weight: 700; }
+a { color: #14395c; text-decoration: none; }
+
+/* ---- blockquote (used for the abstract lead and callouts) -------------- */
+blockquote {
+  margin: 10pt 0;
+  padding: 7pt 10pt;
+  border-left: 2pt solid #bbb;
+  background: #f7f7f7;
+  font-size: 9.4pt;
+  text-align: left;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* ---- tables ------------------------------------------------------------ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 4pt 0 12pt 0;
+  font-size: 8.5pt;
+  font-variant-numeric: tabular-nums;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+th, td {
+  border-bottom: 0.4pt solid #d5d5d5;
+  padding: 3pt 5pt;
+  text-align: left;
+  vertical-align: top;
+  hyphens: none;
+}
+thead th {
+  border-bottom: 0.8pt solid #666;
+  border-top: 0.8pt solid #666;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 8pt;
+  font-weight: 600;
+}
+tbody tr:last-child td { border-bottom: 0.8pt solid #666; }
+/* numeric columns read better right-aligned, but pandoc gives us no class,
+   so we lean on tabular-nums and leave alignment alone rather than guess. */
+
+/* Table captions are authored as a bold-only paragraph immediately before
+   the table. break-after on the inline <strong> is ignored, so the rule has
+   to land on the block box. */
+p:has(> strong:only-child) {
+  break-after: avoid;
+  page-break-after: avoid;
+  margin-bottom: 3pt;
+}
+
+/* ---- figures ----------------------------------------------------------- */
+/* Figures are sized below full measure: it reads better against justified
+   body text, and a smaller block fits into remaining page space more often,
+   which is what keeps break-inside:avoid from leaving large gaps. */
+img {
+  display: block;
+  max-width: 84%;
+  margin: 10pt auto 4pt auto;
+}
+/* The paragraph holding only an image, and the caption paragraph after it */
+p:has(> img:only-child) {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  break-after: avoid;
+  margin-bottom: 0;
+}
+p:has(> img:only-child) + p {
+  font-size: 8.6pt;
+  line-height: 1.35;
+  color: #333;
+  text-align: left;
+  margin: 0 0 12pt 0;
+  break-before: avoid;
+  page-break-before: avoid;
+}
+
+/* ---- rules ------------------------------------------------------------- */
+hr {
+  border: none;
+  border-top: 0.4pt solid #ddd;
+  margin: 14pt 0;
+}
+
+/* ---- references -------------------------------------------------------- */
+/* The reference list is plain paragraphs starting with [n]; give them a
+   hanging indent so the numbers align. */
+h2#references ~ p {
+  font-size: 9pt;
+  line-height: 1.34;
+  text-align: left;
+  margin: 0 0 4pt 0;
+  padding-left: 15pt;
+  text-indent: -15pt;
+  hyphens: none;
+}
+h2#references ~ h2 ~ p {
+  padding-left: 0;
+  text-indent: 0;
+  font-size: 10.2pt;
+  line-height: 1.44;
+  text-align: justify;
+}

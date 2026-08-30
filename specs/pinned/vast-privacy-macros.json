@@ -1,0 +1,44 @@
+[
+  {
+    "name": "IFA",
+    "description": "A resettable advertising ID from a device-specific advertising ID scheme, such as Apple\u2019s ID for Advertisers or Android\u2019s Advertising ID in UUID format or based on the IAB Tech Lab\u2019s Guidelines for IFA on OTT platforms.",
+    "introversion": "4.1",
+    "support": "Optional"
+  },
+  {
+    "name": "IFATYPE",
+    "description": "String value indicating the type of IFA included in the [IFA] macro. More details in the IAB Tech Lab\u2019s Guidelines for IFA on OTT platforms.",
+    "introversion": "4.1",
+    "support": "Optional"
+  },
+  {
+    "name": "LIMITADTRACKING",
+    "description": "The limit ad tracking setting of a device-specific advertising ID scheme. This value is a boolean, with \u201c1\u201d indicating that a user has opted for limited ad tracking, and \u201c0\u201d indicating that the user has not opted.",
+    "introversion": "4.1",
+    "support": "Required"
+  },
+  {
+    "name": "REGULATIONS",
+    "description": "List of applicable regulations.",
+    "introversion": "4.1",
+    "support": "Optional"
+  },
+  {
+    "name": "GDPRCONSENT",
+    "description": "Base64-encoded Cookie Value of IAB GDPR consent info.",
+    "introversion": "4.1",
+    "support": "Optional"
+  },
+  {
+    "name": "GPPSTRING",
+    "description": "GPP String from the Global Privacy Platform.",
+    "introversion": "4.x",
+    "support": "Optional"
+  },
+  {
+    "name": "GPPSECTIONID",
+    "description": "Array of the Section ID(s) of the GPP string from GPPSTRING which should be applied. See the GPP Section Information for the list of Section IDs. GPP Section 3 (Header) and 4 (Signal Integrity) do not need to be included.",
+    "introversion": "4.x",
+    "support": "Optional"
+  }
+]

@@ -1,0 +1,10 @@
+specs/gpp/
+specs/tcf/
+specs/usprivacy/
+__pycache__/
+*.pyc
+.DS_Store
+.mpl/
+.publish-repo/
+data/*.bak
+build/.paper.html
